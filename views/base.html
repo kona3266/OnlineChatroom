@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js "></script>
+    <script src="https://unpkg.com/vue@2.0.1/dist/vue.js"></script>
+    <script src="/static/js/bootstrap.js"></script>
+</head>
+
+<body>
+    <div id="important" style="color:#cdbfe3; background-color:#6f5499; padding:30px 0; margin:-20px 0 20px 0;">
+        <div class="container">
+            <h1 style="color:#fff; font-size:60px">Online Chatroom!</h1>
+            <p style="font-size:24px; line-height:48px">Free chat room with no registration, you can enter and start chat without registration</p>
+        </div>
+    </div>
+    {% block main %} {% endblock %}
+    <footer style="background-color:#ddd; padding: 20px 0;">
+        <div class="container">
+            <p>This WebApp is created by <a target="_blank" href="http://github.com/kona3266">@diyuandeng</a>.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

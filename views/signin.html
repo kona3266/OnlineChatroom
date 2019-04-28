@@ -1,0 +1,43 @@
+{% extends "base.html" %} {% block main %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>WebSocket Chat</h1>
+            <div class="alert alert-danger">Please sign in before join the room.
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><span class="glyphicon glyphicon-user"></span> Please sign in</h3>
+                </div>
+                <div class="panel-body">
+                    <form action="/signin" method="post">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" name="name" class="form-control" placeholder="你的昵称" value="{{ name }}">
+                            <p class="help-block">Your user name</p>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign In</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title"><span class="glyphicon glyphicon-hd-video"></span>Introduction</h3>
+                </div>
+                <div class="panel-body">
+                
+                        <iframe src="https://www.youtube.com/embed/i5OVcTdt_OU" width=100% height="400px"></iframe>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
